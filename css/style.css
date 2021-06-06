@@ -1,0 +1,298 @@
+/*
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*/
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.picture{
+    width: 80%
+}
+
+.logo{
+    max-width: 30%
+}
+
+
+/*
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+/*    margin: 10% 10% 0% 10%;*/
+    background-color: lightgray;
+    width: 75%;    
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+/*    margin-top: 6.5em;*/
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    width: 18rem;
+    height: 30rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 2.5em;
+    padding-top: 2.5em
+        
+}
+
+.logo {
+/*
+    padding-top: 15%;
+    padding-left: 15%
+*/
+}
+
+
+.header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+/*
+    padding-left: 18%;
+    padding-top: 10%;
+*/
+    text-align: left;
+}
+
+.description {
+    text-align: left;
+    word-wrap: normal;
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+/*    padding: 10%;*/
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    position: relative;
+    border-bottom-left-radius: 3%;
+    border-top-left-radius: 3%;
+}
+
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
+}
+
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    position: relative;
+        border-bottom-right-radius: 3%;
+    border-top-right-radius: 3%
+}
+
+
+.learnMoreSed {
+    background-color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    color: hsl(31, 77%, 52%);
+    border-radius: 20px;
+    padding: 5px;
+    bottom: 0;
+    width: 10em;
+    height: 3.2em;
+    font-size: .938em;
+    font-weight: 600;
+}
+
+.learnMoreSuv {
+    background-color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    color: hsl(184, 100%, 22%);
+    border-radius: 20px;
+    padding: 5px;
+    bottom: 0;
+    width: 10em;
+    height: 3.2em;
+    font-size: .938em;
+    font-weight: 600;
+}
+
+.learnMoreLux {
+    background-color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    color: hsl(179, 100%, 13%);
+    border-radius: 20px;
+    padding: 5px;
+    bottom: 0;
+    width: 10em;
+    height: 3.2em;
+    font-size: .938em;
+    font-weight: 600;
+}
+
+
+.learnMoreSed:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.learnMoreSuv:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 20px;
+}
+
+
+.learnMoreLux:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 20px;
+}
+
+
+
+.button{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: left;
+    color: hsl(228, 45%, 44%);
+    position: absolute; bottom: 0%;
+}
+
+
+
+@media (max-device-width: 1443px){
+        .attribution {
+        display: none;
+            
+    }
+        .luxury{
+        margin-top: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 3%;
+        border-bottom-left-radius: 3%;
+    }
+    
+        .sedans{
+        margin-bottom: 0;
+    }
+        .suvs {
+        margin-bottom: 0;
+        border-top-right-radius: 3%;
+        border-bottom-right-radius: 3%
+    }
+    
+}
+
+
+@media (max-device-width: 969px){
+        .suvs {
+        margin-bottom: 0;
+        margin-top: 0;
+        border-top-right-radius:0;
+        border-bottom-right-radius:0;
+    }
+    
+        .sedans{
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 3%;
+    }
+    
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3%%;
+    }
+}
+
+@media (max-device-width: 375px) {
+    .card {
+    margin-top:0;
+    margin-bottom: 0;
+    width: 15rem;
+    height: 22rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-right: 2em
+    }
+    
+    .sedans{
+        border-top-right-radius: 3%;
+        border-bottom-left-radius: 0;
+        margin-top: 20%
+    
+    }
+    
+    .luxury{
+        border-bottom-left-radius: 3%;
+        border-top-right-radius: 0;
+        margin-bottom: 20%
+    }
+    
+    .attribution {
+        display: none;
+    }
+    
+    .header {
+        font-size: 1em
+    }
+    
+    .description {
+        font-size: .8em;
+        text-align: left;
+    }
+    
+    .logo {
+    
+    }
+    
+    .learnMoreLux{
+        height: 3em;
+        width: 8.em;
+        font-size: .813em
+    }
+    .learnMoreSed{
+        height: 3em;
+        width: 8.em;
+        font-size: .813em
+    }
+    .learnMoreSuv{
+        height: 3em;
+        width: 8.em;
+        font-size: .813em
+    }
+    
+    .card{
+        height: 20rem;
+    }
+}
+
+
+
+
+
